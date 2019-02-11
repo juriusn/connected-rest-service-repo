@@ -20,6 +20,9 @@ import java.util.List;
 import static connectedcities.controller.Constants.CITY;
 import static connectedcities.controller.Constants.REQUIRED_FILE_NOT_FOUND_ERROR;
 
+/**
+ * main SpringBoot Application class
+ */
 @SpringBootApplication
 public class Application {
 
