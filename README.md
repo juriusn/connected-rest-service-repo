@@ -6,10 +6,10 @@
 
 if the city.txt content is:
 
-Boston, New York
-Philadelphia, Newark
-Newark, Boston
-Trenton, Albany
+Boston, New York </br>
+Philadelphia, Newark </br>
+Newark, Boston </br>
+Trenton, Albany </br>
 
 http://localhost:8080/connected?origin=Boston&destination=Newark
 Should return yes
