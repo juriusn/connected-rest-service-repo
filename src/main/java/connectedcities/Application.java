@@ -31,6 +31,7 @@ public class Application {
     @Autowired
     private ISearchService searchService;
 
+
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
@@ -52,4 +53,6 @@ public class Application {
         }
         return cities;
     }
+
+
 }

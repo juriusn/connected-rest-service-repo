@@ -10,12 +10,15 @@ import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.PostConstruct;
+import javax.servlet.RequestDispatcher;
+import javax.servlet.http.HttpServletRequest;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -28,7 +31,6 @@ import static connectedcities.controller.Constants.*;
 
 @Api(value="Connected Cities Application", description="Provides operation for checking connected cities")
 @RestController
-//@RequestMapping("/api/v1")
 public class ConnectedCheckerController {
 
     private static final Logger logger = LoggerFactory.getLogger(ConnectedCheckerController.class);
@@ -45,5 +47,4 @@ public class ConnectedCheckerController {
         logger.debug(System.lineSeparator() + "origin = %s , destination = %s", origin, destination);
         return searchService.isConnected(origin, destination)?YES:NO;
     }
-
 }
