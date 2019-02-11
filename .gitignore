@@ -27,6 +27,10 @@ build/
 *.iws
 *.idea
 
+# Log Files #
+
+*.log
+
 # Spring Bootstrap artifacts
 
 dependency-reduced-pom.xml
