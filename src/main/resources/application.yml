@@ -1,4 +1,4 @@
-# set to a default 8080 port, but ca be changed, if 8080 is occupied.
+# set to a default 8080 port, but can be changed, if 8080 is occupied.
 server:
   port: 8080
   error:
