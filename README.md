@@ -1,4 +1,4 @@
-# Connected rest service
+# Modified Connected rest service
 
 <h3>Service goal: find out if 2 cities, provided on the service URL as parameters, are connected.</h3>
 <h5>
